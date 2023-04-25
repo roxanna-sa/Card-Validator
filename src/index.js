@@ -63,6 +63,7 @@ function dibujarCVVTarjeta() {
 51 to 55	MasterCard
 */
 
+
 function validarFranquicia (){
   const creditCardNumber = document.querySelector("#inputNumero").value;
   let urlImagen = "img/";
