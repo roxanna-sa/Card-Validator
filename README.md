@@ -28,5 +28,5 @@ Orientado a pequeñas y medianas empresas que deseen implementar métodos de pag
 
 ¿Dónde puedo visitar el proyecto?
 
-Puedes visitar el siguiente link para conocer el producto  [Ecommerce-Payment](https://github.com/roxanna-sa/roxanna-sa)
+Puedes visitar el siguiente link para conocer el producto  [Ecommerce-Payment](https://roxanna-sa.github.io/DEV007-card-validation/src/)
 
