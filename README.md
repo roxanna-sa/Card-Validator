@@ -5,7 +5,7 @@
 * [1. Validador de tarjetas](#1-validador-de-tarjetas)
 * [2. Algoritmo de Luhn ¿Qué es?](#2-algoritmo-de-luhn-que-es)
 * [3. Usuario](#3-usuario)
-* [4. Preview de muestra](#3-preview-de-muestra)
+* [4. Preview de muestra](#4-preview-de-muestra)
 
 
 ***
