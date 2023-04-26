@@ -6,7 +6,7 @@ const validator = {
     creditCardNumber = creditCardNumber.toString(); //para asegurar de que el parámetro sea string//
 
     let reverse = ""; // se guarda la tarjeta dada vuelta
-    let sumaFinal = 0; //si la seteo en vacía va a ser string, si la seteo en cero es numérica
+    let sumaFinal = 0; //si la seteo en vacía va a ser string, si la seteo en cero es numérica. Acumula el resultado de cada dígito procesado en el ciclo for.
   
     //primer ciclo for para invertir el número
     for (let i = creditCardNumber.length - 1; i >= 0; i--) {
@@ -14,7 +14,7 @@ const validator = {
       reverse = reverse + numeroEnLectura.toString(); //para concatenar
     }
 
-    //multiplica todos los segundos números *2 y suma los dobles dígitos
+    //multiplica todos los segundos números *2 y suma los numeros que tienen dos dígitos
     for (let i = 0; i < reverse.length; i++){
 
       let numeroEnLectura = reverse.charAt(i);
