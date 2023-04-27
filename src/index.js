@@ -124,7 +124,7 @@ for (let i = anioActual; i <= anioActual + 10; i++) {
 
 // Dibujar en tarjeta la selección de Mes
 
- //document.querySelector("#seleccionarMes").addEventListener...
+//document.querySelector("#seleccionarMes").addEventListener...
 formulario.seleccionarMes.addEventListener('change', () => {
   const valorSeleccionMes = document.querySelector("#seleccionarMes").value;
   if (valorSeleccionMes === "") {
