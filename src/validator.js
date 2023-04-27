@@ -35,7 +35,7 @@ const validator = {
           numeroEnLectura = parseInt(digitoPrimario) + parseInt(digitoSecundario); //toma la variable numeroEnLectura y le asigna el valor de la suma de dígitos
         }
       }
-      sumaFinal = sumaFinal + parseInt(numeroEnLectura);
+      sumaFinal = sumaFinal + parseInt(numeroEnLectura); //sumaFinal += parseInt(numeroEnLectura)
     }
 
     if (sumaFinal %10 === 0){ //verifica si es múltiplo de 10
@@ -55,7 +55,7 @@ const validator = {
       if (i < creditCardNumber.length - 4) {
         numeroOculto = numeroOculto + "#";
       } else {
-        numeroOculto = numeroOculto + creditCardNumber[i];
+        numeroOculto = numeroOculto + creditCardNumber[i];  //numeroOculto += creditCardNumber[i]
       }
     }
 
