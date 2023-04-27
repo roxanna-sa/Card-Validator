@@ -14,7 +14,7 @@ const validator = {
       reverse = reverse + numeroEnLectura.toString(); //para concatenar
     }
 
-    //multiplica todos los segundos números *2 y suma los numeros que tienen dos dígitos
+    //multiplica todos los segundos números (índices impares) *2 y suma los numeros que tienen dos dígitos
     for (let i = 0; i < reverse.length; i++){
 
       let numeroEnLectura = reverse.charAt(i);

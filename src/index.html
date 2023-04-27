@@ -23,7 +23,6 @@
           <div class="sector" id="num">
             <p class="etiqueta">Numero de la tarjeta</p>
             <p class="numero" id="numero"> #### #### #### ####</p>
-
           </div>
 
           <div class="flexbox">
@@ -36,7 +35,6 @@
             <div class="sector" id="expiracion">
               <p class="etiqueta">Expiración</p>
               <p class="expiracion"> <span class="mes" id="mesExpiracion">MM</span>/<span class="anio" id="anioExpiracion">AA</span> </p>
-
             </div>
           </div>
 
@@ -48,33 +46,28 @@
       <div class="back">
         <div class="barra"></div>
         <div class="datos">
-        <div class="sector" >
-          <p class="etiqueta" id="CVV">CVV</p>
-         
+          <div class="sector" >
+            <p class="etiqueta" id="CVV">CVV</p>
+          </div>
         </div>
-        
 
-       </div>
-
-       <p class="informacionBanco">
-        Esta tarjeta es de propiedad de Promotora BANK International S.A. Su uso es personal e intransferible y está sujeto al contrato suscrito con Promotora BANK International S.A. 
-      </p>
-       
-
-
+        <p class="informacionBanco">
+          Esta tarjeta es de propiedad de Promotora BANK International S.A. Su uso es personal e intransferible y está sujeto al contrato suscrito con Promotora BANK International S.A. 
+        </p>
       </div>
     </section>
 
-    <!--Formulario -->
+    <!--Métodos de pago aceptados -->
     <br>
     <h3>Métodos de pago aceptados </h3>
     <div class="payment">
-      <img src="img/paymentvisa.png" class="payvisa">
-      <img src="img/paymentmastercard.png" class="paymaster">
-      <img src="img/paymentamex.png" class="payamex">
-      <img src="img/paymentdiners.png" class="paydiners">
+      <img src="img/paymentvisa.png" class="paymentMethod">
+      <img src="img/paymentmastercard.png" class="paymentMethod">
+      <img src="img/paymentamex.png" class="paymentMethod">
+      <img src="img/paymentdiners.png" class="paymentMethod">
     </div>
 
+     <!--Formulario -->
     <br>
     <form id="formulario" class="formulario">
       <div class="grupo">
@@ -85,7 +78,6 @@
       <div class="grupo">
         <label for="inputNombre">NOMBRE EN LA TARJETA</label>
         <input type="text" id="inputNombre" placeholder="Ingresa el nombre tal como aparece en la tarjeta" minlength="1" maxlength="25" autocomplete="off" required>
-
       </div>
 
       <div class="flexbox2">
@@ -97,20 +89,14 @@
               <select name="meses" id="seleccionarMes" class="" required>
                 <option value="" disabled selected>Mes</option>
               </select>
-              
-
             </div>
 
             <div class="seleccionGrupo">
               <select name="anio" id="seleccionarAnio" class="" required>
                 <option value="" selected disabled>Año</option>
               </select>
-              
-
             </div>
-
           </div>
-        
         </div>
 
         <div class="grupo CVV">
@@ -118,8 +104,8 @@
           <input type="text" id="inputCVV" placeholder="123" minlength="3" maxlength="3" required>
 
         </div>
-
       </div>
+
       <button type="submit" class="botonEnvio" id="botonEnvio" style="color:white">VALIDAR</button>
 
     </form>
@@ -127,9 +113,7 @@
 
   </div>
 
-  <header></header>
-  <main></main>
-  <footer></footer>
+  
   <script src="index.js" type="module"></script>
 </body>
 

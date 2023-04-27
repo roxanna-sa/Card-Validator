@@ -1,7 +1,6 @@
 import validator from './validator.js';
 
-console.log(validator);
-
+//console.log(validator);
 
 function onlyNumbers(evento) {
   //verificar que sean solo números y la tecla borrar//
@@ -40,7 +39,7 @@ function dibujoNombreTarjeta() {
 function botonValidacion() {
   const creditCardNumber = document.querySelector("#inputNumero").value;
   const isValid = validator.isValid(creditCardNumber);
-  if (isValid) {
+  if (isValid === true) {
     alert('tarjeta válida');
   } else {
     alert('tarjeta inválida');
@@ -67,7 +66,7 @@ function dibujarCVVTarjeta() {
 function validarFranquicia (){
   const creditCardNumber = document.querySelector("#inputNumero").value;
   let urlImagen = "img/";
-  if (creditCardNumber.startsWith("4") === true){
+  if (creditCardNumber.startsWith("4") === true){    //startsWith (método de un string)
     urlImagen = urlImagen + "Visa.png";
   } else if(creditCardNumber.startsWith("34") === true || creditCardNumber.startsWith("37") === true ){
     urlImagen = urlImagen + "Amex.png";
@@ -78,7 +77,7 @@ function validarFranquicia (){
   } else {
     urlImagen = "#";
   }
-  document.querySelector("#franquicia").setAttribute("src",urlImagen);
+  document.querySelector("#franquicia").setAttribute("src",urlImagen); //al elemento id#franquicia cambia el atributo src por la urlImagen
 }
 
 document.querySelector("#inputNumero").addEventListener('keydown', onlyNumbers);
@@ -124,12 +123,14 @@ for (let i = anioActual; i <= anioActual + 10; i++) {
 }
 
 // Dibujar en tarjeta la selección de Mes
+
+ //document.querySelector("#seleccionarMes").addEventListener...
 formulario.seleccionarMes.addEventListener('change', () => {
   const valorSeleccionMes = document.querySelector("#seleccionarMes").value;
   if (valorSeleccionMes === "") {
     mesExpiracion.innerHTML = "MM";
   } else {
-    mesExpiracion.innerHTML = document.querySelector("#seleccionarMes").value;
+    mesExpiracion.innerHTML = valorSeleccionMes;
   }
 });
 
@@ -139,7 +140,7 @@ formulario.seleccionarAnio.addEventListener('change', () => {
   if (valorSeleccionAnio === "") {
     anioExpiracion.innerHTML = "AA";
   } else {
-    anioExpiracion.innerHTML = document.querySelector("#seleccionarAnio").value.slice(2);
+    anioExpiracion.innerHTML = valorSeleccionAnio.slice(2);
   }
 });
 

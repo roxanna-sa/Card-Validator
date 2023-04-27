@@ -84,13 +84,10 @@
 }
 
 .etiqueta{
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 5px;
 }
 
-.etiqueta{
-    font-size: 16px;
-}
 
 .numero,
 .nombre,
@@ -146,22 +143,13 @@
 
 }
 
-.payamex{
+/*Métodos de Pago*/
+
+.paymentMethod{
     max-height: 30px;
     max-width: auto;
 }
-.paymaster{
-    max-height: 30px;
-    max-width: auto;
-}
-.payvisa{
-    max-height: 30px;
-    max-width: auto;
-}
-.paydiners{
-    max-height: 30px;
-    max-width: auto;
-}
+
 
 /*Formulario*/
 
