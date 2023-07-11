@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 class="titulo" >E-commerce payment</h1>
+
+  <div class="container">
+    <section class="tarjeta" id="tarjeta">
+      <div class="front">
+        <div class="padreFranquicia">
+          <img src="#" alt="" class="franquicia" id="franquicia">
+        </div>
+
+        <img src="img/chip-dorado.png" class="chip">
+
+        <div class="datos">
+          <div class="sector" id="num">
+            <p class="etiqueta">Numero de la tarjeta</p>
+            <p class="numero" id="numero"> #### #### #### ####</p>
+          </div>
+
+          <div class="flexbox">
+            <div class="sector" id="">
+              <p class="etiqueta">Nombre en la tarjeta</p>
+              <p class="nombre" id="nombre">CARDHOLDER NAME</p>
+            </div>
+
+
+            <div class="sector" id="expiracion">
+              <p class="etiqueta">Expiración</p>
+              <p class="expiracion"> <span class="mes" id="mesExpiracion">MM</span>/<span class="anio" id="anioExpiracion">AA</span> </p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="back">
+        <div class="barra"></div>
+        <div class="datos">
+          <div class="sector" >
+            <p class="etiqueta" id="CVV">CVV</p>
+          </div>
+        </div>
+
+        <p class="informacionBanco">
+          Esta tarjeta es de propiedad de Promotora BANK International S.A. Su uso es personal e intransferible y está sujeto al contrato suscrito con Promotora BANK International S.A. 
+        </p>
+      </div>
+    </section>
+
+    <!--Métodos de pago aceptados -->
+    <br>
+    <h3>Métodos de pago aceptados </h3>
+    <div>
+      <img src="img/paymentvisa.png" class="paymentMethod">
+      <img src="img/paymentmastercard.png" class="paymentMethod">
+      <img src="img/paymentamex.png" class="paymentMethod">
+      <img src="img/paymentdiners.png" class="paymentMethod">
+    </div>
+
+     <!--Formulario -->
+    <br>
+    <form id="formulario" class="formulario">
+      <div class="grupo">
+        <label for="inputNumero">NÚMERO TARJETA</label>
+        <input type="text" id="inputNumero" placeholder="Ingresa número de tarjeta" minlength="1" maxlength="16" autocomplete="off" required>
+      </div>
+
+      <div class="grupo">
+        <label for="inputNombre">NOMBRE EN LA TARJETA</label>
+        <input type="text" id="inputNombre" placeholder="Ingresa el nombre tal como aparece en la tarjeta" minlength="1" maxlength="25" autocomplete="off" required>
+      </div>
+
+      <div class="flexbox2">
+        <div class="expiracion2">
+          <label for="seleccionarMes">VALID THRU</label>
+
+          <div class="flexbox2">
+            <div class="seleccionGrupo">
+              <select name="meses" id="seleccionarMes" class="" required>
+                <option value="" disabled selected>Mes</option>
+              </select>
+            </div>
+
+            <div class="seleccionGrupo">
+              <select name="anio" id="seleccionarAnio" class="" required>
+                <option value="" selected disabled>Año</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="grupo CVV">
+          <label for="inputCVV">CVV</label>
+          <input type="text" id="inputCVV" placeholder="123" minlength="3" maxlength="3" required>
+
+        </div>
+      </div>
+
+      <button type="submit" class="botonEnvio" id="botonEnvio" style="color:white">VALIDAR</button>
+
+    </form>
+
+
+  </div>
+
+  
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
