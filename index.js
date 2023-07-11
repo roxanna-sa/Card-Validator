@@ -13,7 +13,7 @@ function largoTarjetaCredito(evento) {
   const creditCardNumber = document.querySelector("#inputNumero").value;
   const largoString = creditCardNumber.length;
   if (largoString > 16) {
-    evento.preventDefault(); //previene que se escriban mas de 16 caracteres
+    evento.preventDefault(); // previene que se escriban mas de 16 caracteres
   }
 }
 
