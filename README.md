@@ -12,6 +12,8 @@
 
 ## 1. Validador de tarjetas
 
+[PREVIEW Ecommerce-Payment](https://roxanna-sa.github.io/Card-Validator/src/)
+
 La necesidad creciente de incoporar metodologías de pago virtuales a los nuevos emprendimientos o empresas que aún no se deciden a tomar el barco de la digitalización es lo que ha impulsado este producto.
 
 Un sencillo módulo para pagos vía tarjetas de crédito que incorpora la verificación de la misma mediante el algoritmo de Luhn.
@@ -28,5 +30,5 @@ Orientado a pequeñas y medianas empresas que deseen implementar métodos de pag
 
 ¿Dónde puedo visitar el proyecto?
 
-Puedes visitar el siguiente link para conocer el producto  [Ecommerce-Payment](https://roxanna-sa.github.io/DEV007-card-validation/src/)
+Puedes visitar el siguiente link para conocer el producto  [Ecommerce-Payment](https://roxanna-sa.github.io/Card-Validator/src/)
 
